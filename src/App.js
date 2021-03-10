@@ -3,11 +3,14 @@ import Main from './main';
 
 import Header from './components/UI/Header.js'
 
+
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header/>
-      <Main />
+      <div className="Bg">
+        <Main />
+      </div>
     </div>
   );
 }
