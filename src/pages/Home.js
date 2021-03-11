@@ -1,10 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Box, Zoom } from '@material-ui/core';
+import { Typography, Box } from '@material-ui/core';
 
 import discordButton from '../assets/icons/join_discord.png'
 import twitchButton from '../assets/icons/join_twitch.png'
-import { LinearScale } from '@material-ui/icons';
 
 const useStyles = makeStyles({
   socialMedia: {
