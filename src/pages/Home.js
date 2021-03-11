@@ -1,30 +1,31 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Typography } from '@material-ui/core';
+import { Typography, Box, Zoom } from '@material-ui/core';
 
 import discordButton from '../assets/icons/join_discord.png'
+import twitchButton from '../assets/icons/join_twitch.png'
+import { LinearScale } from '@material-ui/icons';
 
 const useStyles = makeStyles({
   socialMedia: {
     width: '100%',
-    marginTop: 16,
+    marginTop: 24,
     flexDirection: 'row',
     justifyContent: 'center',
   },
   socialButtons: {
     marginRight: '24px',
-    maxHeight: '60px',
+    maxHeight: '50px',
     cursor: 'pointer',
   },
   homeCard: {
     width: '55%',
-    marginTop: 80,
-    marginLeft: 16,
-    padding: 8,
+    marginTop: 112,
+    marginLeft: 24,
+    padding: 12,
     backgroundColor: '#00091a',
     color: 'white',
     borderRadius: 5,
-    justifyContent: 'center',
   },
 });
 
@@ -33,22 +34,22 @@ export default function Home() {
 
   return (
     <>
-    <div className={classes.homeCard} >
-      <Typography variant="h4" gutterBottom align='center' >
+    <Box className={classes.homeCard}>
+      <Typography variant="h4" gutterBottom>
       Team Hub
-      </Typography>
-      <Typography variant="h6" gutterBottom paragraph="true">
-      ' A plataforma criada para conectar a galera. Participe de infinitos campeonatosfsdfs dfsdfsdfsdfsdfsdsdfsd osdfhjnsodi jfosidj fsjd fijsdofisjd. dskm  sdasd asrew rsdaws.dasd. asd asa weadawrfaefsefdf .sd sdfsd.
       </Typography>
       <Typography variant="h6" gutterBottom paragraph="true">
       A plataforma criada para conectar a galera. Participe de infinitos campeonatosfsdfs dfsdfsdfsdfsdfsdsdfsd osdfhjnsodi jfosidj fsjd fijsdofisjd. dskm  sdasd asrew rsdaws.dasd. asd asa weadawrfaefsefdf .sd sdfsd.
       </Typography>
-    </div>
-    <Container className={classes.socialMedia}>
+      <Typography variant="h6" gutterBottom paragraph="true">
+      A plataforma criada para conectar a galera. Participe de infinitos campeonatosfsdfs dfsdfsdfsdfsdfsdsdfsd osdfhjnsodi jfosidj fsjd fijsdofisjd. dskm  sdasd asrew rsdaws.dasd. asd asa weadawrfaefsefdf .sd sdfsd.
+      </Typography>
+    </Box>
+    <Box display="flex" className={classes.socialMedia}>
       <img alt='' src={discordButton} className={classes.socialButtons} />
-      <img alt='' src={discordButton} className={classes.socialButtons} />
-      <img alt='' src={discordButton} className={classes.socialButtons} />
-    </Container>
+      <img alt='' src={twitchButton} className={classes.socialButtons} />
+    </Box>
+
     </>
   );
 }

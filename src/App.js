@@ -3,7 +3,6 @@ import Main from './main';
 
 import Header from './components/UI/Header.js'
 
-
 function App() {
   return (
     <div className="App">

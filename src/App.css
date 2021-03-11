@@ -1,14 +1,15 @@
 .App {
   background-color: #3E505B;
+  display: flex;
 }
 
 .Bg{
-  background-image: url('../src/assets/icons/viego-bg.jpg');
+  background-image: url('../src/assets/icons/viego-full.jpg');
   min-width: 100%;
   min-height: 100%;
   background-repeat: no-repeat;
   top: 0;
   left: 0;
   position: absolute;
-  background-size: contain;
+  background-size: cover;
 }
