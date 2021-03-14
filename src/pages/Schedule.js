@@ -10,15 +10,9 @@ const useStyles = makeStyles({
     marginTop: 100,
     margin: 'auto',
     backgroundColor: '#02173d',
-    color: 'white',
-  },
-  title: {
-    fontSize: 14,
-    color: 'white',
   },
   pos: {
     marginBottom: 12,
-    color: 'white',
   },
 });
 
@@ -28,13 +22,13 @@ export default function Schedule() {
   return (
     <Card className={classes.root} variant="outlined">
       <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
+        <Typography variant="h4" gutterBottom>
           Testando a Schedule
         </Typography>
-        <Typography variant="h5" component="h2">
+        <Typography variant="h5">
           Lorem
         </Typography>
-        <Typography className={classes.pos} color="textSecondary">
+        <Typography className={classes.pos}>
           Ipsum
         </Typography>
         <Typography variant="body2" component="p">

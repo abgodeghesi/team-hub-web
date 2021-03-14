@@ -1,30 +1,32 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Box } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 
 import discordButton from '../assets/icons/join_discord.png'
 import twitchButton from '../assets/icons/join_twitch.png'
 
 const useStyles = makeStyles({
-  socialMedia: {
+  root:{
+    display: 'flex',
+    marginTop: 84,
     width: '100%',
-    marginTop: 24,
-    flexDirection: 'row',
-    justifyContent: 'center',
+    flexDirection: 'column',
+  },
+  homeCard: {
+    width: '50%',
+    margin: 'auto',
+    padding: 12,
+    backgroundColor: '#00091a',
+    borderRadius: 5,
+  },
+  socialMedia: {
+    marginTop: '24px',
+    margin: 'auto',
   },
   socialButtons: {
     marginRight: '24px',
     maxHeight: '50px',
     cursor: 'pointer',
-  },
-  homeCard: {
-    width: '55%',
-    marginTop: 112,
-    marginLeft: 24,
-    padding: 12,
-    backgroundColor: '#00091a',
-    color: 'white',
-    borderRadius: 5,
   },
 });
 
@@ -33,22 +35,23 @@ export default function Home() {
 
   return (
     <>
-    <Box className={classes.homeCard}>
-      <Typography variant="h4" gutterBottom>
-      Team Hub
-      </Typography>
-      <Typography variant="h6" gutterBottom paragraph="true">
-      A plataforma criada para conectar a galera. Participe de infinitos campeonatosfsdfs dfsdfsdfsdfsdfsdsdfsd osdfhjnsodi jfosidj fsjd fijsdofisjd. dskm  sdasd asrew rsdaws.dasd. asd asa weadawrfaefsefdf .sd sdfsd.
-      </Typography>
-      <Typography variant="h6" gutterBottom paragraph="true">
-      A plataforma criada para conectar a galera. Participe de infinitos campeonatosfsdfs dfsdfsdfsdfsdfsdsdfsd osdfhjnsodi jfosidj fsjd fijsdofisjd. dskm  sdasd asrew rsdaws.dasd. asd asa weadawrfaefsefdf .sd sdfsd.
-      </Typography>
-    </Box>
-    <Box display="flex" className={classes.socialMedia}>
-      <img alt='' src={discordButton} className={classes.socialButtons} />
-      <img alt='' src={twitchButton} className={classes.socialButtons} />
-    </Box>
-
+    <div className={classes.root}>
+      <div className={classes.homeCard}>
+        <Typography variant="h4" gutterBottom align='center'>
+        Team Hub Web v0.1.2
+        </Typography>
+        <Typography variant="h5" gutterBottom>
+        Features disponíveis até o momento:
+        </Typography>
+        <Typography variant="h6" gutterBottom paragraph='true'>
+        • Header responsivo<br />• Home (BG desabilitado)<br />• Slider de games na página "Nossos Jogos"
+        </Typography>
+      </div>
+      <div className={classes.socialMedia}>
+        <img alt='' src={discordButton} className={classes.socialButtons} />
+        <img alt='' src={twitchButton} className={classes.socialButtons} />
+      </div>
+    </div>
     </>
   );
-}
+};
