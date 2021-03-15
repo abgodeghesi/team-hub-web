@@ -8,7 +8,7 @@ const GameSlider = ({ title, items }) => {
   const[slideX, setSlideX] = useState(35);
 
   const handleLeftSlide = () => {
-    let horSlide = slideX + Math.round(window.innerWidth / 3);
+    let horSlide = slideX + Math.round(window.innerWidth / 2);
     if(horSlide > 35) {
       horSlide = 35;
     }
@@ -16,8 +16,8 @@ const GameSlider = ({ title, items }) => {
   };
 
   const handleRightSlide = () => {
-    let horSlide = slideX - Math.round(window.innerWidth / 3);
-    let gameList = items.length * 150;
+    let horSlide = slideX - Math.round(window.innerWidth / 2);
+    let gameList = items.length * 150 + 25;
     if((window.innerWidth - gameList) > horSlide) {
       horSlide = (window.innerWidth - gameList) - 30;
     }
@@ -41,6 +41,7 @@ const GameSlider = ({ title, items }) => {
           {items.map((game, key) => (
             <div className="gameSlider--item" key={key}>
               <img alt='' src={game.cover} />
+              <div className="gameSlider--itemName">{game.name}</div>
             </div>
           ))}
         </div>

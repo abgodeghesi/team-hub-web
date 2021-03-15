@@ -1,15 +1,19 @@
 .gameSlider {
-    margin-top: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 8px;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 .gameSlider h2 {
-    margin: 30px 0px 5px 35px;
+    margin: 0px 0px 0px 35px;
 }
 .gameSlider--listarea {
     overflow-x: hidden;
 }
 .gameSlider--list {
-    transition: 200ms;
+    transition: 500ms;
 }
 .gameSlider--item {
     display: inline-block;
@@ -23,11 +27,24 @@
     transform: scale(1);
     transition: 300ms;
 }
+.gameSlider--itemName {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    padding: 1px;
+    opacity: 0;
+}
+.gameSlider--item:hover .gameSlider--itemName {
+    opacity: 100;
+    transition: 500ms;
+}
 .gameSlider--left,
 .gameSlider--right {
     margin-top: 10px;
     position: absolute;
-    width: 40px;
+    width: 35px;
     height: 205px;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.6);
@@ -37,7 +54,7 @@
     overflow: hidden;
     cursor: pointer;
     opacity: 0;
-    transition: 200ms;
+    transition: 300ms;
 }
 .gameSlider--left {
     left: 0;
