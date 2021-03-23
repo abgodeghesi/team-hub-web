@@ -17,7 +17,7 @@
 }
 .gameSlider--item {
     display: inline-block;
-    width: 150px;
+    width: 220px;
 }
 .gameSlider--item img {
     width: 100%;
@@ -42,12 +42,11 @@
 }
 .gameSlider--left,
 .gameSlider--right {
-    margin-top: 10px;
     position: absolute;
     width: 35px;
-    height: 205px;
+    height: 315px;
     z-index: 99;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
