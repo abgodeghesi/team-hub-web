@@ -17,7 +17,7 @@ const GameSlider = ({ title, items }) => {
 
   const handleRightSlide = () => {
     let horSlide = slideX - Math.round(window.innerWidth / 2);
-    let gameList = items.length * 150 + 25;
+    let gameList = items.length * 220 + 25;
     if((window.innerWidth - gameList) > horSlide) {
       horSlide = (window.innerWidth - gameList) - 30;
     }
@@ -27,16 +27,18 @@ const GameSlider = ({ title, items }) => {
   return(
     <div className="gameSlider">
       <h2>{title}</h2>
-      <div className="gameSlider--left" onClick={handleLeftSlide}>
-        <NavigateBeforeIcon style={{ fontSize: 30 }} />
-      </div>
+      { slideX < 35 &&
+        <div className="gameSlider--left" onClick={handleLeftSlide}>
+          <NavigateBeforeIcon style={{ fontSize: 30 }} />
+        </div>
+      }
       <div className="gameSlider--right" onClick={handleRightSlide}>
         <NavigateNextIcon style={{ fontSize: 30 }} />
       </div>
       <div className="gameSlider--listarea">
         <div className="gameSlider--list" style={{ 
           marginLeft: slideX,
-          width: items.length * 180,
+          width: items.length * 230,
         }}>
           {items.map((game, key) => (
             <div className="gameSlider--item" key={key}>
