@@ -23,11 +23,11 @@ const Games = [
                 cover: "https://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike%3A%20Global%20Offensive-272x380.jpg",
             },
             {
-                name: "Runeterra",
+                name: "Legends of Runeterra",
                 cover: "https://static-cdn.jtvnw.net/ttv-boxart/Legends%20of%20Runeterra-272x380.jpg",
             },
             {
-                name: "Poker Stars",
+                name: "Poker",
                 cover: "https://static-cdn.jtvnw.net/ttv-boxart/Poker-272x380.jpg",
             },
             {
@@ -113,11 +113,11 @@ const Games = [
             },
             {
                 name: "Mario Kart (Switch)",
-                cover: "https://static-cdn.jtvnw.net/ttv-boxart/Mario%20Kart%208.jpg",
+                cover: "https://static-cdn.jtvnw.net/ttv-boxart/Mario%20Kart%208-272x380.jpg",
             },
             {
                 name: "Pokemon",
-                cover: "https://static-cdn.jtvnw.net/ttv-boxart/Pokémon%20Sword%2FShield.jpg",
+                cover: "https://static-cdn.jtvnw.net/ttv-boxart/Pokémon%20Sword%2FShield-272x380.jpg",
             },
             {
                 name: "Path of Exile",
