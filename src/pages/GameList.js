@@ -3,17 +3,16 @@ import GameSlider from '../components/GameSlider';
 import Alert from '../components/Alert'
 
 import Games from '../mock/games';
-
-const mockedGames = Games;
+import TextMock from '../mock/texts';
 
 export default function GameList() {
   return(
     <>
       <div style={{ display: 'flex', justifyContent: 'center'}}>
-        <Alert />
+        <Alert text={TextMock.MissingGames} />
       </div>
       <section>
-        {mockedGames.map((game, key) => (
+        {Games.map((game, key) => (
           <div>
             <GameSlider key={key} title={game.title} items={game.details} />
           </div>
