@@ -1,23 +1,32 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography } from '@material-ui/core';
+import { Typography, Box } from '@material-ui/core';
 
-import discordButton from '../assets/icons/join_discord.png'
-import twitchButton from '../assets/icons/join_twitch.png'
+import serverLogo from '../assets/logos/discord_server_logo.png';
+import discordButton from '../assets/icons/join_discord.png';
+import twitchButton from '../assets/icons/join_twitch.png';
+
+import TextMock from '../mock/texts.js';
 
 const useStyles = makeStyles({
   root:{
-    display: 'flex',
     marginTop: 84,
+    display: 'flex',
+    justifyContent: 'center',
     width: '100%',
-    flexDirection: 'column',
   },
   homeCard: {
-    width: '50%',
-    margin: 'auto',
+    maxWidth: '80%',
+    display: 'flex',
+    flexDirection: 'column',
     padding: 12,
-    backgroundColor: '#00091a',
+    backgroundColor: '#02173d',
     borderRadius: 5,
+  },
+  serverLogo: {
+    maxWidth: '200px',
+    alignSelf: 'center',
+    marginBottom: '5px',
   },
   socialMedia: {
     marginTop: '24px',
@@ -37,19 +46,29 @@ export default function Home() {
     <>
     <div className={classes.root}>
       <div className={classes.homeCard}>
-        <Typography variant="h4" gutterBottom align='center'>
-        Team Hub Web v0.1.2
+        <img alt='' src={serverLogo} className={classes.serverLogo}/>
+        <Box mb={5}>
+          <Typography variant="h3" align='center'>
+            Team Hub
+          </Typography>
+        </Box>
+        <Box mb={5}>
+          <Typography variant="h5" align='center'>
+            {TextMock.HomeIntro}
+          </Typography>
+        </Box>
+        <Box mb={5}>
+          <Typography variant="h5" align='center'>
+            {TextMock.HomeContent}
+          </Typography>
+        </Box>
+        <Typography variant="h9" align='center'>
+          {TextMock.SocialMedia}
         </Typography>
-        <Typography variant="h5" gutterBottom>
-        Features disponíveis até o momento:
-        </Typography>
-        <Typography variant="h6" gutterBottom paragraph='true'>
-        • Header responsivo<br />• Home (BG desabilitado)<br />• Slider de games na página "Nossos Jogos"
-        </Typography>
-      </div>
-      <div className={classes.socialMedia}>
-        <img alt='' src={discordButton} className={classes.socialButtons} />
-        <img alt='' src={twitchButton} className={classes.socialButtons} />
+        <div className={classes.socialMedia}>
+          <img alt='' src={discordButton} className={classes.socialButtons} />
+          <img alt='' src={twitchButton} className={classes.socialButtons} />
+        </div>
       </div>
     </div>
     </>
