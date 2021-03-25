@@ -46,7 +46,7 @@ export default function Home() {
     <>
     <div className={classes.root}>
       <div className={classes.homeCard}>
-        <img src={serverLogo} className={classes.serverLogo}/>
+        <img alt='' src={serverLogo} className={classes.serverLogo}/>
         <Box mb={5}>
           <Typography variant="h3" align='center'>
             Team Hub
