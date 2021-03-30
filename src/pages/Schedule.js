@@ -105,7 +105,7 @@ export default function Schedule() {
                   8 Vagas
               </Box>
             </Typography>
-            <Button href={"https://forms.gle/iTfhAPXnuemooKAZ8"} variant="contained" disableElevation>
+            <Button href={"https://forms.gle/iTfhAPXnuemooKAZ8"} target="_blank" variant="contained" disableElevation>
               Registrar
             </Button>
           </Box>
@@ -129,7 +129,7 @@ export default function Schedule() {
                   16 Vagas
               </Box>
             </Typography>
-            <Button href={"https://forms.gle/dNUMYswapgrcPL598"} variant="contained" color="primary" disableElevation>
+            <Button href={"https://forms.gle/dNUMYswapgrcPL598"} target="_blank" variant="contained" color="primary" disableElevation>
               Registrar
             </Button>
           </Box>
@@ -153,7 +153,7 @@ export default function Schedule() {
                   10 Vagas
               </Box>
             </Typography>
-            <Button href={"https://forms.gle/hxqMxcnjXskwWDaC6"} variant="contained" disableElevation>
+            <Button href={"https://forms.gle/hxqMxcnjXskwWDaC6"} target="_blank" variant="contained" disableElevation>
               Registrar
             </Button>
           </Box>
