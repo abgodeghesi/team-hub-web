@@ -32,8 +32,8 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     minWidth: '280px',
     padding: '12px',
-    background: 'linear-gradient(110deg, #062c7f 60%, #0a47cc 60%);',
-    margin: '16px',
+    background: 'linear-gradient(263deg, rgba(47,102,226,1) 0%, rgba(13,74,212,1) 100%)',
+      margin: '16px',
     userSelect: 'none',
   },
   tftContainer: {
@@ -42,7 +42,7 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     minWidth: '280px',
     padding: '12px',
-    background: 'linear-gradient(110deg, #DF6F11 60%, #EC9144 60%);',
+    background: 'linear-gradient(263deg, rgba(244,155,54,1) 0%, rgba(255,181,98,1) 100%)',
     margin: '16px',
     userSelect: 'none',
   },
@@ -52,7 +52,7 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     minWidth: '280px',
     padding: '12px',
-    background: 'linear-gradient(110deg, #0E5F7F 60%, #227EA3 60%);',
+    background: 'linear-gradient(263deg, rgba(44,200,222,1) 0%, rgba(39,131,158,1) 100%)',
     margin: '16px',
     userSelect: 'none',
   },
@@ -129,7 +129,7 @@ export default function Schedule() {
                   16 Vagas
               </Box>
             </Typography>
-            <Button variant="contained" color="primary" disableElevation>
+            <Button href={"https://forms.gle/yfTzF9v9DftMdaRw9"} variant="contained" color="primary" disableElevation>
               Registrar
             </Button>
           </Box>
