@@ -34,6 +34,7 @@ const useStyles = makeStyles({
     padding: '12px',
     background: 'linear-gradient(110deg, #062c7f 60%, #0a47cc 60%);',
     margin: '16px',
+    userSelect: 'none',
   },
   tftContainer: {
     display: 'flex',
@@ -42,8 +43,8 @@ const useStyles = makeStyles({
     minWidth: '280px',
     padding: '12px',
     background: 'linear-gradient(110deg, #DF6F11 60%, #EC9144 60%);',
-    margin: '16px'
-    
+    margin: '16px',
+    userSelect: 'none',
   },
   leagueContainer: {
     display: 'flex',
@@ -52,7 +53,8 @@ const useStyles = makeStyles({
     minWidth: '280px',
     padding: '12px',
     background: 'linear-gradient(110deg, #0E5F7F 60%, #227EA3 60%);',
-    margin: '16px'
+    margin: '16px',
+    userSelect: 'none',
   },
   cardTitle: {
     alignItems: 'center',
@@ -62,7 +64,7 @@ const useStyles = makeStyles({
   },
   cardLogo: {
     maxHeight: '110px',
-    marginBottom: '16px'
+    marginBottom: '16px',
   },
   cardDetails: {
     marginBottom: '8px',
