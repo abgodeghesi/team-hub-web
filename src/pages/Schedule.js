@@ -105,7 +105,7 @@ export default function Schedule() {
                   8 Vagas
               </Box>
             </Typography>
-            <Button variant="contained" disableElevation>
+            <Button href={"https://forms.gle/p5AxzfTRSx7MCbNz6"} variant="contained" disableElevation>
               Registrar
             </Button>
           </Box>
@@ -153,7 +153,7 @@ export default function Schedule() {
                   10 Vagas
               </Box>
             </Typography>
-            <Button variant="contained" disableElevation>
+            <Button href={"https://forms.gle/hxqMxcnjXskwWDaC6"} variant="contained" disableElevation>
               Registrar
             </Button>
           </Box>
