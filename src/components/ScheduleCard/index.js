@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Button, Box, Typography, capitalize } from '@material-ui/core/';
+import { Button, Box, Typography } from '@material-ui/core/';
 
 const useStyles = makeStyles({
   container: {
