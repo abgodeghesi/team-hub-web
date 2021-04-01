@@ -8,11 +8,10 @@ import { Switch, Route } from 'react-router-dom';
 const Main = () => (
   <Switch>
     <Route exact path='/' component={Home}/>
-    <Route path='/schedule' component={Schedule}/>
-    <Route path='/games' component={GameList}/> 
-    <Route path='/history' component={History}/>
+    <Route path='/agenda' component={Schedule}/>
+    <Route path='/jogos' component={GameList}/> 
+    <Route path='/historico' component={History}/>
   </Switch>
 );  
-
 
 export default Main;
