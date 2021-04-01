@@ -20,15 +20,15 @@ const headersData = [
   },
   {
     label: "Agenda",
-    href: "/schedule",
+    href: "/agenda",
   },
   {
     label: "Nossos Jogos",
-    href: "/games",
+    href: "/jogos",
   },
   {
     label: "Histórico",
-    href: "/history",
+    href: "/historico",
   },
 ];
 
