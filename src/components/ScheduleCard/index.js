@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Button, Box, Typography } from '@material-ui/core/';
+import { Button, Box, Typography, capitalize } from '@material-ui/core/';
 
 const useStyles = makeStyles({
   container: {
@@ -33,7 +33,6 @@ const useStyles = makeStyles({
   },
   cardDetails: {
     marginBottom: '8px',
-    marginTop: '8px',
   },
 })
 
@@ -47,25 +46,25 @@ const ScheduleCard = (events) => {
           <div className={classes.cardTitle}>
             <img className={classes.cardLogo} alt='' src={item.icon} />
             <Typography variant="h5" align="center">
-              {item.title}
+              <h3 style={{ padding: 0, margin: 0, textTransform: 'capitalize', fontSize: 24 }}>{item.title}</h3>
             </Typography>
           </div>
           <Typography variant="h9" align="center">
-            <Box className={classes.cardDetails}>
-              {item.day}
+            <Box>
+              <h4 style={{ padding: 0, margin: 0, textTransform: 'capitalize', fontSize: 16, fontWeight: 400 }}>{item.day}</h4>
             </Box>
           </Typography>
           <Typography variant="h9" align="center">
             <Box className={classes.cardDetails}>
-              {item.hour}
+              <h4 style={{ padding: 0, margin: 0, fontSize: 16, fontWeight: 400 }}>{item.hour}</h4>
             </Box>
           </Typography>
           <Typography variant="h5" align="center">
             <Box className={classes.cardDetails}>
-              {item.eventName}
+              <h5 style={{ padding: 0, margin: 0, textTransform: 'capitalize', fontSize: 24, fontWeight: 400 }}>{item.eventName}</h5>
             </Box>
             <Box className={classes.cardDetails}>
-              {item.vacancies}
+              <h5 style={{ padding: 0, margin: 0, textTransform: 'capitalize', fontSize: 24, fontWeight: 400 }}>{item.vacancies + ' vagas'}</h5>
             </Box>
           </Typography>
           <Button
