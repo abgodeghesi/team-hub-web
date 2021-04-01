@@ -72,6 +72,7 @@ const ScheduleCard = (events) => {
             target="_blank"
             variant="contained"
             color={item.button}
+            disabled={item.disabled}
             disableElevation
           >
             Registrar

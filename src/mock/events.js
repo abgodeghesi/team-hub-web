@@ -12,6 +12,7 @@ const events = [
     bgColor: 'rocketBg',
     icon: rocketIcon,
     button: '',
+    disabled: 'true',
     callToAction: 'https://forms.gle/iTfhAPXnuemooKAZ8',
   },
   {
@@ -23,6 +24,7 @@ const events = [
     bgColor: 'tftBg',
     icon: tftIcon,
     button: 'primary',
+    disabled: '',
     callToAction: 'https://forms.gle/dNUMYswapgrcPL598',
   },
   {
@@ -34,6 +36,7 @@ const events = [
     bgColor: 'leagueBg',
     icon: leagueIcon,
     button: '',
+    disabled: '',
     callToAction: 'https://forms.gle/hxqMxcnjXskwWDaC6',
   }
 ]
