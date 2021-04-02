@@ -24,7 +24,7 @@ const events = [
     bgColor: 'tftBg',
     icon: tftIcon,
     button: 'primary',
-    disabled: '',
+    disabled: 'true',
     callToAction: 'https://forms.gle/dNUMYswapgrcPL598',
   },
   {
