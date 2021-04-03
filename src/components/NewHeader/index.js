@@ -75,7 +75,7 @@ const NewHeader = () => (
   <Header>
     <List>
       <ListItemLogo>
-        <img src={serverLogo} width="64" />
+        <img src={serverLogo} width="64" alt="" />
         <span>Team Hub</span>
       </ListItemLogo>
       {headersData.map(item => (

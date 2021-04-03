@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Box } from '@material-ui/core';
 
-import serverLogo from '../assets/logos/discord_server_logo.png';
 import discordButton from '../assets/icons/join_discord.png';
 import twitchButton from '../assets/icons/join_twitch.png';
 
