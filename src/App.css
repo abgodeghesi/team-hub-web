@@ -6,19 +6,21 @@
 }
 
 .App {
-  background-color: #00091a;
+  display: flex;
+  overflow-x: hidden;
+  /* background-color: #00091a;
   color: #fff;
   margin-top: auto;
-  margin: 0;
+  margin: 0; */
 }
 
 @media screen and (min-width: 900px) {
   .App{
-    background-color: #00091a;
+    /* background-color: #00091a;
     min-width: 100%;
     min-height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 88px;
+    margin-top: 88px; */
   }
 }
