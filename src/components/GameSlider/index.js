@@ -29,11 +29,11 @@ const GameSlider = ({ title, items }) => {
       <h2>{title}</h2>
       { slideX < 35 &&
         <div className="gameSlider--left" onClick={handleLeftSlide}>
-          <NavigateBeforeIcon style={{ fontSize: 30 }} />
+          <NavigateBeforeIcon style={{ fontSize: 30, color: 'wheat' }} />
         </div>
       }
       <div className="gameSlider--right" onClick={handleRightSlide}>
-        <NavigateNextIcon style={{ fontSize: 30 }} />
+        <NavigateNextIcon style={{ fontSize: 30, color: 'wheat' }} />
       </div>
       <div className="gameSlider--listarea">
         <div className="gameSlider--list" style={{ 

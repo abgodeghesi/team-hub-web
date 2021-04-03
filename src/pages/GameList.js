@@ -8,9 +8,10 @@ import TextMock from '../mock/texts';
 
 const useStyles = makeStyles({
   alert:{
-    marginTop: 84,
+    marginTop: 10,
     display: 'flex',
     justifyContent: 'center',
+    width: 'calc(100vw - 140px)',
   },
 });
 
@@ -19,10 +20,10 @@ export default function GameList() {
 
   return(
     <>
-      <div className={classes.alert}>
-        <Alert text={TextMock.MissingGames} />
-      </div>
       <section>
+        <div className={classes.alert}>
+          <Alert text={TextMock.MissingGames} />
+        </div>
         {Games.map((game, key) => (
           <div>
             <GameSlider key={key} title={game.title} items={game.details} />

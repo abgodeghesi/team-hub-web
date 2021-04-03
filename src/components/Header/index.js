@@ -172,10 +172,8 @@ export default function Header() {
   };
 
   return (
-    <header>
-      <AppBar className={header}>
-        {mobileView ? displayMobile() : displayDesktop()}
-      </AppBar>
-    </header>
+    <AppBar className={header}>
+      {mobileView ? displayMobile() : displayDesktop()}
+    </AppBar>
   );
 }
