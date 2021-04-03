@@ -11,6 +11,7 @@ const useStyles = makeStyles({
     padding: '12px',
     margin: '16px',
     userSelect: 'none',
+    color: 'white',
   },
   rocketBg: {
     background: 'linear-gradient(263deg, rgba(47,102,226,1) 0%, rgba(13,74,212,1) 100%)',

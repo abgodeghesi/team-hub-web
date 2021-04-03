@@ -16,8 +16,8 @@ const useStyles = makeStyles({
   },
   container: {
     padding: 12,
-    backgroundColor: '#02173d',
     borderRadius: 5,
+    margin: '0 auto',
   },
   cardRow: {
     display: 'flex',
@@ -68,6 +68,10 @@ const useStyles = makeStyles({
     marginBottom: '8px',
     marginTop: '8px',
   },
+  wheat: {
+    color: 'wheat',
+    textShadow: '2px 2px black',
+  },
 });
 
 export default function Schedule() {
@@ -75,11 +79,11 @@ export default function Schedule() {
 
   return (
     <>
-    <div className={classes.alert}>
-      <Alert text={TextMock.ScheduleDetails} />
-    </div>
       <main className={classes.container}>
-        <Typography variant="h3" align="center">
+        <div className={classes.alert}>
+          <Alert text={TextMock.ScheduleDetails} />
+        </div>
+        <Typography variant="h3" align="center" className={classes.wheat}>
           ESSA SEMANA NO TEAM HUB
         </Typography>
         <section className={classes.cardRow}>

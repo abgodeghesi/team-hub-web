@@ -3,7 +3,7 @@ import { ThemeProvider } from '@material-ui/styles';
 import './App.css';
 import Main from './main';
 
-import Header from './components/Header'
+import NewHeader from './components/NewHeader'
 
 const theme = createMuiTheme({
   typography: {
@@ -19,7 +19,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <Header/>
+        <NewHeader />
         <Main />
       </div>
     </ThemeProvider>

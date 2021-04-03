@@ -5,7 +5,7 @@ import TextMock from '../mock/texts.js';
 
 export default function History() {
     return(
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '100',}}>
+        <div style={{ width: 'auto', justifyContent: 'center', margin: '10px auto',}}>
             <Alert text={TextMock.WipText} />
         </div>
     )

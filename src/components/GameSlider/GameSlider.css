@@ -7,6 +7,8 @@
     -o-user-select: none;
 }
 .gameSlider h2 {
+    color: wheat;
+    text-shadow: 2px 2px black;
     margin: 0px 0px 0px 35px;
 }
 .gameSlider--listarea {
@@ -35,6 +37,7 @@
     position: relative;
     padding: 1px;
     opacity: 0;
+    color: white;
 }
 .gameSlider--item:hover .gameSlider--itemName {
     opacity: 100;
@@ -44,7 +47,8 @@
 .gameSlider--right {
     position: absolute;
     width: 35px;
-    height: 315px;
+    height: 35px;
+    border-radius: 50%;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
@@ -54,9 +58,9 @@
     cursor: pointer;
     opacity: 0;
     transition: 300ms;
+    margin-top: 115px;
 }
 .gameSlider--left {
-    left: 0;
 }
 .gameSlider--right {
     right: 0;
