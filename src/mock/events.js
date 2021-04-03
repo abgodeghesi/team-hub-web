@@ -36,7 +36,7 @@ const events = [
     bgColor: 'leagueBg',
     icon: leagueIcon,
     button: '',
-    disabled: '',
+    disabled: 'true',
     callToAction: 'https://forms.gle/hxqMxcnjXskwWDaC6',
   }
 ]
