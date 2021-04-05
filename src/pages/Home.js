@@ -9,11 +9,13 @@ import TextMock from '../mock/texts.js';
 
 const useStyles = makeStyles({
   root:{
-    paddingLeft: '140px',
     marginTop: 84,
     display: 'flex',
     justifyContent: 'center',
     width: '100%',
+    '@media (max-width: 800px)' : {
+      paddingLeft: '140px',
+    },
   },
   homeCard: {
     maxWidth: '80%',
