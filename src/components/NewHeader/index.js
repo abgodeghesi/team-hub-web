@@ -7,6 +7,9 @@ import serverLogo from '../../assets/logos/discord_server_logo.png';
 const Header = styled.header`
   background: rgba(255, 255, 255, 0.1);
   height: 100vh;
+  @media(max-width: 800px) {
+    position: fixed;
+  }
 `;
 
 const List = styled.ul`
@@ -64,10 +67,6 @@ const headersData = [
   {
     label: "Nossos Jogos",
     href: "/jogos",
-  },
-  {
-    label: "Histórico",
-    href: "/historico",
   },
 ];
 

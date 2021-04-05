@@ -13,6 +13,9 @@ const useStyles = makeStyles({
     display: 'flex',
     justifyContent: 'center',
     width: '100%',
+    '@media (max-width: 800px)' : {
+      paddingLeft: '140px',
+    },
   },
   homeCard: {
     maxWidth: '80%',
@@ -29,11 +32,21 @@ const useStyles = makeStyles({
   socialMedia: {
     marginTop: '24px',
     margin: 'auto',
+    display: 'flex',
+    '@media(max-width: 780px)' : {
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }
   },
   socialButtons: {
     marginRight: '24px',
     maxHeight: '50px',
     cursor: 'pointer',
+    '@media(max-width: 780px)' : {
+      marginBottom: '16px',
+      marginRight: '0px'
+    }
   },
   wheat: {
     color: 'wheat',

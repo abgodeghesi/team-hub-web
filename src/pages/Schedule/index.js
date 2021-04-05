@@ -18,11 +18,17 @@ const useStyles = makeStyles({
     padding: 12,
     borderRadius: 5,
     margin: '0 auto',
+    '@media(max-width: 780px)' : {
+      paddingLeft: '140px',
+    }
   },
   cardRow: {
     display: 'flex',
-    flexDirection: 'row',
     justifyContent: 'center',
+    '@media(max-width: 780px)' : {
+      alignItems: 'center',
+      flexDirection: 'column',
+    }
   },
   rocketContainer: {
     display: 'flex',

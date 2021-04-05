@@ -20,7 +20,7 @@ export default function GameList() {
 
   return(
     <>
-      <section>
+      <section style={{ paddingLeft: '140px' }}>
         <div className={classes.alert}>
           <Alert text={TextMock.MissingGames} />
         </div>
