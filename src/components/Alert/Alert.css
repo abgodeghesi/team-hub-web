@@ -1,5 +1,7 @@
 .Container {
     margin-bottom: 8px;
+    margin-left: 12px;
+    margin-right: 12px;
     user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;

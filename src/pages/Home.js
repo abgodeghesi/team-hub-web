@@ -9,6 +9,7 @@ import TextMock from '../mock/texts.js';
 
 const useStyles = makeStyles({
   root:{
+    paddingLeft: '140px',
     marginTop: 84,
     display: 'flex',
     justifyContent: 'center',
@@ -29,11 +30,21 @@ const useStyles = makeStyles({
   socialMedia: {
     marginTop: '24px',
     margin: 'auto',
+    display: 'flex',
+    '@media(max-width: 780px)' : {
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }
   },
   socialButtons: {
     marginRight: '24px',
     maxHeight: '50px',
     cursor: 'pointer',
+    '@media(max-width: 780px)' : {
+      marginBottom: '16px',
+      marginRight: '0px'
+    }
   },
   wheat: {
     color: 'wheat',
