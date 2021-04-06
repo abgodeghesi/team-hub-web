@@ -13,19 +13,19 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     alignContent: 'center',
     marginBottom: '12px',
+    marginTop: '12px',
   },
   container: {
-    padding: 12,
     borderRadius: 5,
     margin: '0 auto',
-    '@media(max-width: 780px)' : {
-      paddingLeft: '140px',
+    '@media(max-width: 800px)' : {
+      paddingLeft: '90px',
     }
   },
   cardRow: {
     display: 'flex',
     justifyContent: 'center',
-    '@media(max-width: 780px)' : {
+    '@media(max-width: 800px)' : {
       alignItems: 'center',
       flexDirection: 'column',
     }
