@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     width: '100%',
     '@media (max-width: 800px)' : {
-      paddingLeft: '140px',
+      paddingLeft: '90px',
     },
   },
   homeCard: {

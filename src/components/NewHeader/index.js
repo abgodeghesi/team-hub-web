@@ -16,6 +16,9 @@ const List = styled.ul`
   padding: 0;
   list-style-type: none;
   width: 140px;
+  @media(max-width: 800px) {
+    width: 90px;
+  }
 `;
 
 const ListItemLogo = styled.li`
@@ -52,6 +55,10 @@ const ListItem = styled.li`
     &.active, &:hover {
       color: white;
     }
+  }
+  @media(max-width: 800px) {
+    width: 66px;
+    height: 66px;
   }
 `;
 
