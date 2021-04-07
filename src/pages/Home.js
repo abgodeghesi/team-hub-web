@@ -157,7 +157,7 @@ export default function Home() {
         <Ruleset>
           Sim! O Major Tournament e seus jogadores se beneficiam diretamente com a quantidade de equipes registradas. Chame seus amigos, convide-os para nosso Discord e compartilhe o nosso evento com todos!
         </Ruleset>
-        <Button as="a" href="https://forms.gle/NRvyXW9SuZdM6Fgj6">
+        <Button as="a" href="https://forms.gle/NRvyXW9SuZdM6Fgj6" target="_blank">
           REGISTRAR
         </Button>
         <Footer>
