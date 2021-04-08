@@ -18,17 +18,17 @@ const useStyles = makeStyles({
   container: {
     borderRadius: 5,
     margin: '0 auto',
-    '@media(max-width: 800px)' : {
+    '@media(max-width: 800px)': {
       paddingLeft: '90px',
-    }
+    },
   },
   cardRow: {
     display: 'flex',
     justifyContent: 'center',
-    '@media(max-width: 800px)' : {
+    '@media(max-width: 800px)': {
       alignItems: 'center',
       flexDirection: 'column',
-    }
+    },
   },
   rocketContainer: {
     display: 'flex',
@@ -36,7 +36,8 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     minWidth: '280px',
     padding: '12px',
-    background: 'linear-gradient(263deg, rgba(47,102,226,1) 0%, rgba(13,74,212,1) 100%)',
+    background:
+      'linear-gradient(263deg, rgba(47,102,226,1) 0%, rgba(13,74,212,1) 100%)',
     margin: '16px',
     userSelect: 'none',
   },
@@ -46,7 +47,8 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     minWidth: '280px',
     padding: '12px',
-    background: 'linear-gradient(263deg, rgba(244,155,54,1) 0%, rgba(255,181,98,1) 100%)',
+    background:
+      'linear-gradient(263deg, rgba(244,155,54,1) 0%, rgba(255,181,98,1) 100%)',
     margin: '16px',
     userSelect: 'none',
   },
@@ -56,7 +58,8 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     minWidth: '280px',
     padding: '12px',
-    background: 'linear-gradient(263deg, rgba(44,200,222,1) 0%, rgba(39,131,158,1) 100%)',
+    background:
+      'linear-gradient(263deg, rgba(44,200,222,1) 0%, rgba(39,131,158,1) 100%)',
     margin: '16px',
     userSelect: 'none',
   },

@@ -1,13 +1,14 @@
+/* eslint-disable */
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import GameSlider from '../components/GameSlider';
-import Alert from '../components/Alert'
+import Alert from '../components/Alert';
 
 import Games from '../mock/games';
 import TextMock from '../mock/texts';
 
 const useStyles = makeStyles({
-  alert:{
+  alert: {
     marginTop: 10,
     display: 'flex',
     justifyContent: 'center',
@@ -18,7 +19,7 @@ const useStyles = makeStyles({
 export default function GameList() {
   const classes = useStyles();
 
-  return(
+  return (
     <>
       <section style={{ paddingLeft: '140px' }}>
         <div className={classes.alert}>
