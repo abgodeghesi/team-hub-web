@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState } from 'react';
 import './GameSlider.css';
 
@@ -5,11 +6,11 @@ import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 const GameSlider = ({ title, items }) => {
-  const[slideX, setSlideX] = useState(35);
+  const [slideX, setSlideX] = useState(35);
 
   const handleLeftSlide = () => {
     let horSlide = slideX + Math.round(window.innerWidth / 2);
-    if(horSlide > 35) {
+    if (horSlide > 35) {
       horSlide = 35;
     }
     setSlideX(horSlide);
@@ -17,32 +18,35 @@ const GameSlider = ({ title, items }) => {
 
   const handleRightSlide = () => {
     let horSlide = slideX - Math.round(window.innerWidth / 2);
-    let gameList = items.length * 220 + 25;
-    if((window.innerWidth - gameList) > horSlide) {
-      horSlide = (window.innerWidth - gameList) - 30;
+    const gameList = items.length * 220 + 25;
+    if (window.innerWidth - gameList > horSlide) {
+      horSlide = window.innerWidth - gameList - 30;
     }
     setSlideX(horSlide);
   };
 
-  return(
+  return (
     <div className="gameSlider">
       <h2>{title}</h2>
-      { slideX < 35 &&
+      {slideX < 35 && (
         <div className="gameSlider--left" onClick={handleLeftSlide}>
           <NavigateBeforeIcon style={{ fontSize: 30, color: 'wheat' }} />
         </div>
-      }
+      )}
       <div className="gameSlider--right" onClick={handleRightSlide}>
         <NavigateNextIcon style={{ fontSize: 30, color: 'wheat' }} />
       </div>
       <div className="gameSlider--listarea">
-        <div className="gameSlider--list" style={{ 
-          marginLeft: slideX,
-          width: items.length * 230,
-        }}>
+        <div
+          className="gameSlider--list"
+          style={{
+            marginLeft: slideX,
+            width: items.length * 230,
+          }}
+        >
           {items.map((game, key) => (
             <div className="gameSlider--item" key={key}>
-              <img alt='' src={game.cover} />
+              <img alt="" src={game.cover} />
               <div className="gameSlider--itemName">{game.name}</div>
             </div>
           ))}

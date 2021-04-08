@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 import serverLogo from '../../assets/logos/discord_server_logo.png';
@@ -14,7 +14,7 @@ const List = styled.ul`
   padding: 0;
   list-style-type: none;
   width: 140px;
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     width: 90px;
   }
 `;
@@ -39,7 +39,7 @@ const ListItemLogo = styled.li`
 
 const ListItem = styled.li`
   display: flex;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -50,11 +50,12 @@ const ListItem = styled.li`
     text-align: center;
     text-decoration: none;
     color: gray;
-    &.active, &:hover {
+    &.active,
+    &:hover {
       color: white;
     }
   }
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     width: 66px;
     height: 66px;
   }
@@ -62,16 +63,16 @@ const ListItem = styled.li`
 
 const headersData = [
   {
-    label: "Home",
-    href: "/",
+    label: 'Home',
+    href: '/',
   },
   {
-    label: "Agenda",
-    href: "/agenda",
+    label: 'Agenda',
+    href: '/agenda',
   },
   {
-    label: "Nossos Jogos",
-    href: "/jogos",
+    label: 'Nossos Jogos',
+    href: '/jogos',
   },
 ];
 
@@ -84,7 +85,7 @@ const NewHeader = () => (
       </ListItemLogo>
       {headersData.map(item => (
         <ListItem>
-          <NavLink to={item.href} activeClassName="active" exact={true}>
+          <NavLink to={item.href} activeClassName="active" exact>
             <span>{item.label}</span>
           </NavLink>
         </ListItem>

@@ -1,5 +1,5 @@
-import garticIcon from '../assets/icons/gartic_icon.jpg'
-import leagueIcon from '../assets/icons/lol-icon.png'
+import garticIcon from '../assets/icons/gartic_icon.jpg';
+import leagueIcon from '../assets/icons/lol-icon.png';
 
 const events = [
   {
@@ -25,7 +25,7 @@ const events = [
     button: '',
     disabled: '',
     callToAction: 'https://forms.gle/dcQFZjZR92JKbMwK6',
-  }
-]
+  },
+];
 
 export default events;
