@@ -74,6 +74,10 @@ const headersData = [
     label: 'Nossos Jogos',
     href: '/jogos',
   },
+  {
+    label: 'Tools',
+    href: '/ferramentas',
+  },
 ];
 
 const NewHeader = () => (
