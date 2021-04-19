@@ -142,7 +142,8 @@ export default function Home() {
             <br />
             • O valor detalhado será divulgado 24 horas antes do início do
             torneio e dependerá diretamente da quantidade de inscritos.
-            <br />• Premiaremos o primeiro e o segundo colocado do campeonato.
+            <br />• Premiaremos o primeiro colocado e o destaque do campeonato,
+            avaliado pelo time da organização.
           </Ruleset>
           <Title>Data e Formato</Title>
           <Ruleset>
