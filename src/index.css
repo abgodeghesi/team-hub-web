@@ -6,7 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-image: url('assets/bg-th.png'); */
-  background-image: url('assets/morgana-bg.jpg');
+  /* background-image: url('assets/morgana-bg.jpg'); */
+  background-image: url('assets/rocket-wallpaper.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #00091a;
