@@ -5,11 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url('assets/bg-th.png'); */
-  /* background-image: url('assets/morgana-bg.jpg'); */
-  background-image: url('assets/rocket-wallpaper.svg');
-  background-size: cover;
+  background-image: url('assets/bg-lol-jhin.png');
+  background-size: auto;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   background-color: #00091a;
 }
-
