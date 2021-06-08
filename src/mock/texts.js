@@ -8,7 +8,7 @@ const TextMock = {
   WipText: 'Página em construção.',
   ScheduleDetails:
     "Ao clicar em 'Registrar', você será redirecionado ao formulário de inscrição com as informações detalhadas de cada campeonato.",
-  SocialMedia: 'Faça parte do Team Hub:',
+  SocialMedia: 'Faça parte do Team Hub',
 };
 
 export default TextMock;

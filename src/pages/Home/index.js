@@ -1,24 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import discordButton from '../../assets/icons/join_discord.png';
-import twitchButton from '../../assets/icons/join_twitch.png';
-import trophyIcon from '../../assets/icons/trophy-svgrepo-com.svg';
+import GoldIcon from '../../assets/icons/lol-gold-icon.png';
+import SilverIcon from '../../assets/icons/lol-silver-icon.png';
+import BronzeIcon from '../../assets/icons/lol-bronze-icon.png';
 
 import TextMock from '../../mock/texts';
 
+const DiscordLink = 'https://discord.com/widget?id=808866054272712714';
+
 const Container = styled.div`
-  margintop: 84;
   display: flex;
-  justifycontent: center;
   width: 100%;
   margin: auto;
   @media (max-width: 800px) {
-    padding-left: 90px;
+    padding: 5px;
+    padding-left: 95px;
   }
   @media (min-width: 800px) {
     padding-left: 140px;
-    max-width: 88%;
+    max-width: 1200px;
   } ;
 `;
 const HomeContainer = styled.div`
@@ -27,102 +28,79 @@ const HomeContainer = styled.div`
   padding: 12;
   border-radius: 5;
 `;
-const ChampContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 16px;
-  userselect: none;
-  color: #e1e1e1;
-  align-self: center;
+const Logo = styled.h1`
+  color: #f0cb3a;
+  font-weight: 700;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  margin: 0 auto;
+  padding: 4rem 0 2rem 0;
 `;
-const TeamsContainer = styled.div`
+const RanksContainer = styled.section`
+  margin: 0 auto;
   display: flex;
-  margin-bottom: 24px;
-  > * {
-    flex-basis: 100%;
-    color: #e1e1e1;
+`;
+const Ranks = styled.img`
+  max-height: 200px;
+`;
+const Title = styled.h3`
+  color: #f0cb3a;
+  font-weight: 700;
+  font-size: 2em;
+  text-shadow: 1px 1px black;
+  margin: 0 auto;
+  padding: 1rem 0;
+`;
+const Intro = styled.h2`
+  color: #ededed;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  margin: 0 auto;
+  padding: 2rem 0;
+`;
+const Ruleset = styled.p`
+  color: #ededed;
+  text-align: left;
+  font-size: 1.3em;
+  text-shadow: 1px 1px black;
+  margin: 0px;
+  font-weight: 400;
+  @media (min-width: 800px) {
+    padding: 12px 0;
   }
 `;
-const CardTitle = styled.h1`
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  text-shadow: 1px 1px black;
-  padding: 1px;
-  margin: 0px;
-`;
-const CardLogo = styled.img`
-  max-height: 110px;
-  margin-bottom: 16px;
-`;
-const CardDetails = styled.h2`
-  margin-bottom: 8px;
-  text-shadow: 1px 1px black;
-  text-align: center;
-  font-weight: 400;
-`;
-const Placing = styled.h2`
-  ]margin: 0px;
-  margin-bottom: 8px;
+const Button = styled.button`
+  text-decoration: none;
+  min-width: 300px;
+  display: block;
+  padding: 16px;
+  margin: 16px auto;
   text-align: center;
   font-weight: 700;
-  text-shadow: 1px 1px black;
-`;
-const Highlights = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-bottom: 24px;
-  padding-top: 16px;
-`;
-const SocialMedia = styled.div`
-  margin-top: 24px;
-  margin: auto;
-  display: flex;
-  @media (max-width: 780px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  } ;
-`;
-const SocialButtons = styled.img`
-  margin-right: 24px;
-  max-height: 50px;
-  cursor: pointer;
-  margin-bottom: 16px;
-  @media (max-width: 780px) {
-    margin-right: 0px;
+  background: #f0cb3a;
+  border-radius: 3px;
+  :visited {
+    text-decoration: none;
+    color: inherit;
   }
-`;
-const Logo = styled.p`
-  color: #f5deb3;
-  font-weight: 500;
-  font-size: 4em;
-  text-align: center;
-  text-shadow: 1px 1px black;
-  margin-bottom: 24px;
-`;
-const Title = styled.p`
-  color: #f5deb3;
-  font-size: 2em;
-  text-align: center;
-  text-shadow: 1px 1px black;
-  margin: 0px;
-  margin-bottom: 8px;
-`;
-const Intro = styled.p`
-  color: #e1e1e1;
-  font-size: 1.5em;
-  text-align: center;
-  text-shadow: 1px 1px black;
-  margin: 0px;
-  margin-bottom: 16px;
+  :hover {
+    background: wheat;
+  }
 `;
 const Footer = styled.p`
   font-size: 1em;
   text-align: center;
   color: white;
   text-shadow: 1px 1px black;
+  margin: 0 auto;
+  padding: 1rem;
+`;
+const SocialMedia = styled.div`
+  margin: 0 auto;
+  display: flex;
 `;
 
 export default function Home() {
@@ -130,57 +108,88 @@ export default function Home() {
     <>
       <Container>
         <HomeContainer>
-          <Logo>Resumo do Torneio de Rocket League</Logo>
+          <Logo>Team Hub Major Tournament: Gold #2</Logo>
+          <RanksContainer>
+            <Ranks alt="" src={GoldIcon} />
+            <Ranks alt="" src={SilverIcon} />
+            <Ranks alt="" src={BronzeIcon} />
+          </RanksContainer>
           <Intro>
-            O Team Hub organizou seu primeiro torneio de Rocket League no dia
-            01/04, focado exclusivamente em iniciantes. Perdeu a inscrição e
-            ficou de fora da nossa stream? Confira o resumão das classificações
-            e assista ao vídeo de melhores momentos na íntegra!
+            O Team Hub Major Tournament é a série de campeonatos focados em
+            trazer uma experiência completamente nova, com limite de elo,
+            grandes premiações e transmições ao vivo com muita qualidade e
+            conteúdo. A segunda edição ocorrerá neste mês, no período da noite,
+            para jogadores Ouro e abaixo. Confira os detalhes:
           </Intro>
-          <Highlights>
-            <iframe
-              width="640"
-              height="340"
-              src="https://www.youtube.com/embed/UG7XPXnQzT0"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </Highlights>
-          <Title>Classificação</Title>
-          <ChampContainer>
-            <CardLogo src={trophyIcon} />
-            <CardTitle>Chuck Confeiteros</CardTitle>
-            <CardDetails>psChuck - Marvis - Arthuzi</CardDetails>
-          </ChampContainer>
-          <TeamsContainer>
-            <div>
-              <Placing>2º Lugar</Placing>
-              <CardTitle>Torettos</CardTitle>
-              <CardDetails>LeoEloizo - Makkz - Jotta</CardDetails>
-            </div>
-            <div>
-              <Placing>3º Lugar</Placing>
-              <CardTitle>Filhos de Marcos</CardTitle>
-              <CardDetails>Pater - Chuca Pabra - Rafabracht</CardDetails>
-            </div>
-            <div>
-              <Placing>4º Lugar</Placing>
-              <CardTitle>Vasco</CardTitle>
-              <CardDetails>Tigas - Carneiro - FabioVieira1</CardDetails>
-            </div>
-            <div>
-              <Placing>5º Lugar</Placing>
-              <CardTitle>Rocket Power</CardTitle>
-              <CardDetails>dcbarros - GabFP - Celao</CardDetails>
-            </div>
-          </TeamsContainer>
-          <Footer>{TextMock.SocialMedia}</Footer>
-          <SocialMedia>
-            <SocialButtons alt="" src={discordButton} />
-            <SocialButtons alt="" src={twitchButton} />
-          </SocialMedia>
+          <Title>Regras</Title>
+          <Ruleset>
+            • Para garantir a competitividade, jogadores que terminaram a Ranked
+            Season 2020 até elo Ouro 1 ou inferior em qualquer fila estarão
+            elegíveis para participar do torneio.
+            <br />
+            • Consequentemente, jogadores que estiverem no Platina 4 ou acima em
+            qualquer fila na season atual não poderão participar.
+            <br />
+            • A administração do Team Hub terá liberdade total em analisar o
+            perfil dos jogadores inscritos.
+            <br />
+            • Smurfs estão explicitamente proibidos e podem levar a
+            desclassificação do time a qualquer momento.
+            <br />• Será cobrado o valor de 50 reais por equipe (10 reais por
+            jogador).
+          </Ruleset>
+          <Title>Premiação</Title>
+          <Ruleset>
+            • Todo o valor arrecadado com as inscrições será convertido para a
+            premiação do campeonato.
+            <br />• O valor detalhado será divulgado 24 horas antes do início do
+            torneio e dependerá diretamente da quantidade de inscritos.
+          </Ruleset>
+          <Title>Data e Formato</Title>
+          <Ruleset>
+            • Dias 16 e 17 de Junho, a partir das 20:00 horas.
+            <br />
+            • Inscrições até as 12:00 horas do dia 15 de Junho.
+            <br />
+            • O formato detalhado dependerá da quantidade total de equipes
+            inscritas e será revelado 24 horas antes do início do torneio.
+            <br />
+            • Garantimos que todas as equipes jogarão mais de uma partida no
+            primeiro dia.
+            <br />• Priorizaremos um sistema justo onde todas equipes poderão
+            mostrar seu valor.
+          </Ruleset>
+          <Title>Quero participar, mas não tenho um time. E agora?</Title>
+          <Ruleset>
+            Use os canais de texto do servidor do Discord do TeamHub para
+            conversar com a galera e procurar por integrantes! Ou demonstre
+            interesse mandando mensagem direta para um de nossos Administradores
+            e tentaremos encaixá-lo em alguma equipe.
+          </Ruleset>
+          <Title>Posso chamar amigos de fora?</Title>
+          <Ruleset>
+            Sim! O Major Tournament e seus jogadores se beneficiam diretamente
+            com a quantidade de equipes registradas. Chame seus amigos,
+            convide-os para nosso Discord e compartilhe o nosso evento com
+            todos!
+          </Ruleset>
+          <Button as="a" href="https://forms.gle/6u17zpFG62oYCXGy8">
+            REGISTRAR
+          </Button>
+          <Footer>
+            {TextMock.SocialMedia}
+            <SocialMedia>
+              <iframe
+                src={DiscordLink}
+                width="350"
+                height="300"
+                title="Discord Server"
+                allowtransparency="true"
+                frameBorder="0"
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+              />
+            </SocialMedia>
+          </Footer>
         </HomeContainer>
       </Container>
     </>
