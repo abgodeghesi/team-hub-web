@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import serverLogo from '../../assets/logos/discord_server_logo.png';
 
 const Header = styled.header`
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(8, 26, 69, 0.6);
   height: 100vh;
   position: fixed;
 `;
