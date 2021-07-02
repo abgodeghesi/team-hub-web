@@ -108,6 +108,7 @@ const RegisterButton = styled.button`
   border-radius: 125px;
   text-decoration: none;
   border: none;
+  cursor: pointer;
 `;
 const Footer = styled.p`
   font-size: 1em;
@@ -160,11 +161,17 @@ const Home = () => {
                 Modalidade: ARAM
                 <br />
                 Número máximo de equipes: 8<br />
-                Data: 12/12/12
+                Data: 07/07/21
                 <br />
-                Hora: 12:00
+                Hora: 20:00
               </GameDetails>
-              <RegisterButton>Registrar</RegisterButton>
+              <RegisterButton
+                onClick={() => {
+                  window.open('https://forms.gle/MfTRzd49H5LEkKvRA', '_blank');
+                }}
+              >
+                Registrar
+              </RegisterButton>
             </GameContainer>
           )}
           {index === 1 && (
@@ -174,11 +181,17 @@ const Home = () => {
                 Modalidade: 3 V 3
                 <br />
                 Número máximo de equipes: 8<br />
-                Data: 12/12/12
+                Data: 08/07/21
                 <br />
-                Hora: 12:00
+                Hora: 20:00
               </GameDetails>
-              <RegisterButton>Registrar</RegisterButton>
+              <RegisterButton
+                onClick={() => {
+                  window.open('https://forms.gle/VYSpszTVGTfa1Yof7', '_blank');
+                }}
+              >
+                Registrar
+              </RegisterButton>
             </GameContainer>
           )}
           {index === 2 && (
@@ -188,11 +201,17 @@ const Home = () => {
                 Modalidade: Freeplay
                 <br />
                 Número máximo de players: 8<br />
-                Data: 12/12/12
+                Data: 09/07/21
                 <br />
-                Hora: 12:00
+                Hora: 20:00
               </GameDetails>
-              <RegisterButton>Registrar</RegisterButton>
+              <RegisterButton
+                onClick={() => {
+                  window.open('https://forms.gle/E1rm7bdSxds7xeWk8', '_blank');
+                }}
+              >
+                Registrar
+              </RegisterButton>
             </GameContainer>
           )}
           <Footer>
