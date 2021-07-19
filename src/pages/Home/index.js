@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+// import HomeWelcome from '../../components/HomeWelcome';
+
 import leagueIcon from '../../assets/icons/lol-icon.png';
 import rocketIcon from '../../assets/icons/rocket-icon.png';
 import gtaIcon from '../../assets/icons/gta-v-icon.png';
@@ -20,13 +22,13 @@ const Container = styled.div`
     padding-left: 95px;
   }
   @media (min-width: 800px) {
-    padding-left: 140px;
-    max-width: 1200px;
+    flex-direction: column;
     height: 100vh;
   }
 `;
 const HomeContainer = styled.div`
   display: flex;
+  padding-left: 140px;
   flex-direction: column;
   width: 100%;
   padding: 12;
@@ -140,6 +142,7 @@ const Home = () => {
   return (
     <>
       <Container>
+        {/* <HomeWelcome /> */}
         <HomeContainer>
           <Title>Team Hub Party Week</Title>
           <Instructions>Escolha seu jogo</Instructions>
