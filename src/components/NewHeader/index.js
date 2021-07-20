@@ -2,62 +2,76 @@ import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-import serverLogo from '../../assets/logos/discord_server_logo.png';
-
 const Header = styled.header`
-  background: rgba(8, 26, 69, 0.6);
-  height: 100vh;
+  background: #00091a;
+  width: 100%;
   position: fixed;
+  padding: 8px 12px 0;
 `;
 
 const List = styled.ul`
-  padding: 0;
   list-style-type: none;
-  width: 140px;
-  @media (max-width: 800px) {
-    width: 90px;
-  }
+  max-width: 1400px;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
 `;
 
 const ListItemLogo = styled.li`
   display: flex;
-  flex-direction: column;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 60px;
-  align-items: center;
-  justify-content: center;
   span {
-    font-family: Bungee;
-    font-size: 14px;
-    text-align: center;
-    color: white;
+    font-family: 'Teko';
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #f5f5f5;
   }
+`;
+
+const ListItemContainer = styled.div`
+  display: flex;
+  margin: 0 auto;
 `;
 
 const ListItem = styled.li`
   display: flex;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 20px;
+  margin: 0 16px;
   align-items: center;
-  justify-content: center;
   a {
-    text-align: center;
     text-decoration: none;
-    color: gray;
-    &.active,
+    font-family: 'Roboto';
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #f5f5f5;
     &:hover {
-      color: white;
+      box-shadow: 0px 2px #f4ff8c;
+      padding-bottom: 8px;
+    }
+    &.active {
+      color: #f4ff8c;
     }
   }
-  @media (max-width: 800px) {
-    width: 66px;
-    height: 66px;
+`;
+const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+  width: 125px;
+`;
+
+const RegisterButton = styled.a`
+  align-self: center;
+  border-radius: 25px;
+  text-decoration: none;
+  background-color: #f5f5f5;
+  font-family: 'Roboto';
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #00091a;
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+  max-height: 50px;
+  &:hover {
+    background-color: #f4ff8c;
   }
 `;
 
@@ -71,8 +85,12 @@ const headersData = [
     href: '/agenda',
   },
   {
-    label: 'Nossos Jogos',
+    label: 'Jogos',
     href: '/jogos',
+  },
+  {
+    label: 'Streamers',
+    href: '/streamers',
   },
 ];
 
@@ -80,16 +98,26 @@ const NewHeader = () => (
   <Header>
     <List>
       <ListItemLogo>
-        <img src={serverLogo} width="64" alt="" />
         <span>Team Hub</span>
       </ListItemLogo>
-      {headersData.map(item => (
-        <ListItem>
-          <NavLink to={item.href} activeClassName="active" exact>
-            <span>{item.label}</span>
-          </NavLink>
-        </ListItem>
-      ))}
+      <ListItemContainer>
+        {headersData.map(item => (
+          <ListItem>
+            <NavLink to={item.href} activeClassName="active" exact>
+              <span>{item.label}</span>
+            </NavLink>
+          </ListItem>
+        ))}
+      </ListItemContainer>
+      <ButtonContainer>
+        <RegisterButton
+          onClick={() => {
+            window.open('https://teamhub.netlify.com/registrar');
+          }}
+        >
+          <span>Registrar</span>
+        </RegisterButton>
+      </ButtonContainer>
     </List>
   </Header>
 );
