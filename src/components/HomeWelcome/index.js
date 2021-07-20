@@ -5,7 +5,6 @@ import Freljord from '../../assets/freljord.jpg';
 
 const Main = styled.main`
   width: 100%;
-  padding-left: 140px;
 `;
 const Background = styled.section`
   background-image: url(${Freljord});
