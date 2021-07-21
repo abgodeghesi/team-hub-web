@@ -6,18 +6,26 @@ import Freljord from '../../assets/freljord.jpg';
 const Main = styled.main`
   width: 100%;
 `;
+
 const Background = styled.section`
   background-image: url(${Freljord});
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 90vh;
 `;
+
 const TitleDiv = styled.div`
   display: flex;
   flex-direction: column;
   height: 90vh;
+  line-height: 120px;
   justify-content: center;
+  padding: 0 8px;
+  @media (min-width: 560px) {
+    padding: 0 0;
+  }
 `;
+
 const H1 = styled.h1`
   padding: 0;
   margin: 0 auto;
@@ -26,6 +34,7 @@ const H1 = styled.h1`
   font-size: 2rem;
   font-weight: 500;
 `;
+
 const H2 = styled.h2`
   padding: 0;
   margin: -30px auto 0;
@@ -33,6 +42,7 @@ const H2 = styled.h2`
   color: #f5f5f5;
   font-size: 9rem;
 `;
+
 const H3 = styled.h3`
   padding: 0;
   margin: 0 auto;
