@@ -1,44 +1,45 @@
 /* eslint-disable */
 
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import HomeWelcome from '../../components/HomeWelcome';
-
-import leagueIcon from '../../assets/icons/lol-icon.png';
-import rocketIcon from '../../assets/icons/rocket-icon.png';
-import gtaIcon from '../../assets/icons/gta-v-icon.png';
+import PerkGrid from '../../components/PerkGrid';
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
-  margin: 70px auto 0;
-  @media (max-width: 800px) {
-    padding: 8px;
-  }
-  @media (min-width: 800px) {
-    flex-direction: column;
-    height: 100vh;
-  }
+  margin: 60px auto 0;
+`;
+
+const PerksContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 0;
+  background-color: #f5f5f5;
+`;
+
+const PerkTitle = styled.h1`
+  padding: 0 0 4rem 8px;
+  margin: 0 auto;
+  font-family: 'Teko';
+  color: #00091a;
+  font-size: 4rem;
+  line-height: 60px;
 `;
 
 const Home = () => {
-  const [index, setIndex] = useState('');
-
-  const games = [
-    { game: 'League of Legends', logo: leagueIcon },
-    { game: 'Rocket League', logo: rocketIcon },
-    { game: 'GTA V', logo: gtaIcon },
-  ];
-
-  const handleActive = i => {
-    setIndex(i);
-  };
-
   return (
     <>
       <Container>
         <HomeWelcome />
+        <PerksContainer>
+          <PerkTitle>VANTAGENS EXCLUSIVAS DO TEAM HUB</PerkTitle>
+          <PerkGrid />
+        </PerksContainer>
       </Container>
     </>
   );

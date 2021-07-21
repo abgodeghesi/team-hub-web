@@ -6,7 +6,7 @@ const Header = styled.header`
   background: #00091a;
   width: 100%;
   position: fixed;
-  padding: 8px 12px 0;
+  padding: 4px 12px 0;
 `;
 
 const List = styled.ul`
@@ -42,12 +42,10 @@ const ListItem = styled.li`
     font-weight: bold;
     letter-spacing: 0.1em;
     color: #f5f5f5;
-    &:hover {
-      box-shadow: 0px 2px #f4ff8c;
+    &.active,
+    :hover {
+      box-shadow: 0px 2px #35ff69;
       padding-bottom: 8px;
-    }
-    &.active {
-      color: #f4ff8c;
     }
   }
 `;
@@ -61,7 +59,7 @@ const RegisterButton = styled.a`
   align-self: center;
   border-radius: 25px;
   text-decoration: none;
-  background-color: #f5f5f5;
+  background-color: #35ff69;
   font-family: 'Roboto';
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -71,7 +69,7 @@ const RegisterButton = styled.a`
   cursor: pointer;
   max-height: 50px;
   &:hover {
-    background-color: #f4ff8c;
+    background-color: #f5f5f5;
   }
 `;
 

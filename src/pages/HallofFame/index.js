@@ -20,7 +20,7 @@ const ConstructionTitle = styled.h1`
   color: #f5f5f5;
 `;
 
-const Schedule = () => (
+const Hof = () => (
   <Container>
     <ConstructionTitle>
       Em breve no
@@ -30,4 +30,4 @@ const Schedule = () => (
   </Container>
 );
 
-export default Schedule;
+export default Hof;
