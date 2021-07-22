@@ -7,6 +7,7 @@ const Header = styled.header`
   width: 100%;
   position: fixed;
   padding: 4px 12px 0;
+  z-index: 9999;
 `;
 
 const List = styled.ul`

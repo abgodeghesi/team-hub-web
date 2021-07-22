@@ -9,9 +9,11 @@ export default function GameList() {
     <>
       <section
         style={{
-          paddingTop: '6rem',
+          marginTop: '60px',
+          paddingTop: '4rem',
           height: '100vh',
           backgroundColor: '#00091a',
+          overflow: 'scroll',
         }}
       >
         {Games.map((game, key) => (
