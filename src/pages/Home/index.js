@@ -23,12 +23,16 @@ const PerksContainer = styled.section`
 `;
 
 const PerkTitle = styled.h1`
-  padding: 0 0 4rem 8px;
-  margin: 0 auto;
+  padding: 0 0 12px 12px;
   font-family: 'Teko';
+  margin: 0;
   color: #00091a;
   font-size: 4rem;
   line-height: 60px;
+  @media (min-width: 768px) {
+    text-align: center;
+    padding: 0 0 4rem;
+  }
 `;
 
 const Home = () => {

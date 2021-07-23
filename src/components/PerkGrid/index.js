@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
-  GiLockedChest,
+  GiOpenTreasureChest,
   GiThreeFriends,
   GiTrophy,
   GiConsoleController,
@@ -12,12 +12,13 @@ import {
 const GridContainer = styled.section`
   width: 100%;
   display: grid;
-  padding: 0 8px;
+  padding: 0 12px;
   justify-content: center;
   grid-auto-flow: auto;
-  grid-gap: 24px;
+  grid-gap: 12px;
   grid-template-columns: repeat(autofill, minmax(100px, 1fr));
-  @media (min-width: 1048px) {
+  @media (min-width: 1024px) {
+    grid-gap: 24px;
     grid-template-columns: repeat(8, 100px);
   }
 `;
@@ -66,7 +67,7 @@ const PerkGrid = () => {
       title: 'Premiações',
       description:
         'Diversos tipos de recompensas para participantes e vencedores',
-      icon: <GiLockedChest size="70" />,
+      icon: <GiOpenTreasureChest size="70" />,
     },
     {
       title: 'Transmissões ao Vivo',
