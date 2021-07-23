@@ -5,6 +5,7 @@ import './App.css';
 import Main from './main';
 
 import NewHeader from './components/NewHeader';
+import Footer from './components/Footer';
 
 const theme = createMuiTheme({
   typography: {
@@ -18,6 +19,7 @@ function App() {
       <div className="App">
         <NewHeader />
         <Main />
+        <Footer />
       </div>
     </ThemeProvider>
   );
