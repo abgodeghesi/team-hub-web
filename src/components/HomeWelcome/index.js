@@ -62,9 +62,9 @@ const H3 = styled.h3`
   font-weight: 400;
   line-height: 1.5;
   padding: 8px 0 0;
+  text-shadow: 1px 1px black;
   @media (min-width: 560px) {
     text-align: center;
-    text-shadow: 1px 1px black;
   }
 `;
 
