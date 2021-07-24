@@ -21,8 +21,8 @@ const TitleDiv = styled.div`
   height: 90vh;
   line-height: 120px;
   justify-content: center;
-  padding: 0 8px 0;
-  @media (min-width: 560px) {
+  padding: 0 12px 0;
+  @media (min-width: 768px) {
     padding: 0 0;
   }
 `;
@@ -31,11 +31,12 @@ const H1 = styled.h1`
   padding: 0;
   font-family: 'Teko', sans-serif;
   color: #f5f5f5;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 500;
   padding: 8px 0 0;
   @media (min-width: 560px) {
     text-align: center;
+    font-size: 2rem;
   }
 `;
 
@@ -44,10 +45,11 @@ const H2 = styled.h2`
   margin: -60px 0 0;
   font-family: 'Teko', sans-serif;
   color: #f5f5f5;
-  font-size: 9rem;
+  font-size: 5rem;
   padding: 8px 0 0;
   @media (min-width: 560px) {
     text-align: center;
+    font-size: 9rem;
   }
 `;
 
@@ -56,13 +58,13 @@ const H3 = styled.h3`
   margin: 0 auto;
   color: #f5f5f5;
   max-width: 60ch;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.5;
   padding: 8px 0 0;
+  text-shadow: 1px 1px black;
   @media (min-width: 560px) {
     text-align: center;
-    text-shadow: 1px 1px black;
   }
 `;
 

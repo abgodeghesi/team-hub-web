@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 import HomeWelcome from '../../components/HomeWelcome';
 import PerkGrid from '../../components/PerkGrid';
+import StreamPartners from '../../components/StreamPartners';
 
 const Container = styled.div`
   display: flex;
@@ -18,12 +19,15 @@ const PerksContainer = styled.section`
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 6rem 0;
+  padding: 4rem 0;
   background-color: #f5f5f5;
+  @media (min-width: 768px) {
+    padding: 6rem 0;
+  }
 `;
 
 const PerkTitle = styled.h1`
-  padding: 0 0 12px 12px;
+  padding: 0 0 2rem 12px;
   font-family: 'Teko';
   margin: 0;
   color: #00091a;
@@ -44,6 +48,7 @@ const Home = () => {
           <PerkTitle>VANTAGENS EXCLUSIVAS DO TEAM HUB</PerkTitle>
           <PerkGrid />
         </PerksContainer>
+        <StreamPartners />
       </Container>
     </>
   );
