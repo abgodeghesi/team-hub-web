@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
+import Button from '../Button';
+
 const Header = styled.header`
   background: #00091a;
   width: 100%;
@@ -56,24 +58,6 @@ const ButtonContainer = styled.div`
   width: 125px;
 `;
 
-const RegisterButton = styled.a`
-  align-self: center;
-  border-radius: 25px;
-  text-decoration: none;
-  background-color: #35ff69;
-  font-family: 'Roboto';
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  color: #00091a;
-  padding: 12px 16px;
-  border: none;
-  cursor: pointer;
-  max-height: 50px;
-  &:hover {
-    background-color: #f5f5f5;
-  }
-`;
-
 const headersData = [
   {
     label: 'Home',
@@ -109,13 +93,14 @@ const NewHeader = () => (
         ))}
       </ListItemContainer>
       <ButtonContainer>
-        <RegisterButton
+        <Button
+          primary
           onClick={() => {
             window.open('https://teamhub.netlify.com/registrar');
           }}
         >
           <span>Registrar</span>
-        </RegisterButton>
+        </Button>
       </ButtonContainer>
     </List>
   </Header>
