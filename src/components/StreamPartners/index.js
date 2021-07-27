@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Button from '../Button';
+
 import streamersvg from '../../assets/icons/partner-streamer.svg';
 
 const Container = styled.main`
@@ -68,24 +70,6 @@ const Description = styled.h2`
   }
 `;
 
-const Btn = styled.a`
-  align-self: center;
-  border-radius: 25px;
-  text-decoration: none;
-  background-color: #35ff69;
-  font-family: 'Roboto';
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  color: #00091a;
-  padding: 12px 16px;
-  border: none;
-  cursor: pointer;
-  max-height: 50px;
-  &:hover {
-    background-color: #f5f5f5;
-  }
-`;
-
 const StreamPartners = () => (
   <Container>
     <Title>SEJA UM STREAMER PARCEIRO</Title>
@@ -99,7 +83,7 @@ const StreamPartners = () => (
           automático no nosso Discord e um card pessoal na nossa página de
           Streamers.
         </Description>
-        <Btn>Saiba mais</Btn>
+        <Button primary>Saiba mais</Button>
       </DescriptionDiv>
     </Content>
   </Container>
